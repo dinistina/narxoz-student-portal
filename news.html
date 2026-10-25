@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Новости спортивного сообщества Narxoz SportHub">
+  <title>Новости — Narxoz SportHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        Narxoz SportHub
+      </a>
+
+      <input type="checkbox" id="burger" class="burger-checkbox">
+      <label for="burger" class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="sections.html" class="nav-link">Секции</a></li>
+          <li><a href="schedule.html" class="nav-link">Расписание</a></li>
+          <li><a href="news.html" class="nav-link active" aria-current="page">Новости</a></li>
+        </ul>
+        <div class="nav-extra">
+          <a href="profile.html" class="button">Профиль</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="profile.html" class="button">Профиль</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="news-intro container" aria-labelledby="page-title">
+      <p class="section-label">NARXOZ SPORT HUB</p>
+      <h1 id="page-title">Новости</h1>
+      <p class="intro-text">Анонсы, результаты и достижения спортивного сообщества Narxoz.</p>
+    </section>
+
+    <section class="news-feed container" aria-labelledby="feed-title">
+      <div class="section-heading">
+        <h2 id="feed-title">Последние публикации</h2>
+        <a class="view-all" href="#all-news">Все</a>
+      </div>
+
+      <nav class="category-list" aria-label="Категории новостей">
+        <a class="category active" href="#all-news">Все</a>
+        <a class="category" href="#news">Новости</a>
+        <a class="category" href="#events">Мероприятия</a>
+        <a class="category" href="#results">Результаты</a>
+        <a class="category" href="#honor">Доска почёта</a>
+      </nav>
+
+      <div class="article-list" id="all-news">
+        <article class="news-card featured-card" id="news">
+          <div class="card-top-line"></div>
+          <p class="card-info"><span class="card-tag">Новости</span><time datetime="2026-10-13">Сегодня, 18:20</time></p>
+          <h3>Идеальный слот уже занят? Теперь есть лист ожидания</h3>
+          <p>Подходящее время для тренировки занято? Добавьтесь в лист ожидания — мы сразу сообщим, если место освободится.</p>
+          <footer class="article-footer"><span>◉ 319 просмотров</span><span>♥ 14 &nbsp; 🔥 6 &nbsp; 😎 4</span></footer>
+        </article>
+
+        <article class="news-card">
+          <div class="card-top-line"></div>
+          <p class="card-info"><span class="card-tag">Новости</span><time datetime="2026-10-12">12 октября</time></p>
+          <h3>Успешный запуск SportHub 🎉</h3>
+          <p>За первые сутки к спортивному сообществу уже присоединились сотни студентов.</p>
+          <footer class="article-footer"><span>◉ 487 просмотров</span><span>♥ 38 &nbsp; 🔥 12</span></footer>
+        </article>
+
+        <article class="news-card" id="events">
+          <div class="card-top-line blue-line"></div>
+          <p class="card-info"><span class="card-tag event-tag">Мероприятия</span><time datetime="2026-10-18">18 октября</time></p>
+          <h3>Осенний турнир по волейболу</h3>
+          <p>Собираем команды факультетов. Регистрация открыта до 16 октября.</p>
+          <p class="event-details">18 октября, 10:00<br>Спорткомплекс Narxoz</p>
+          <footer class="article-footer"><span>◉ 196 просмотров</span><a href="schedule.html">Участвовать →</a></footer>
+        </article>
+
+        <article class="news-card" id="results">
+          <div class="card-top-line green-line"></div>
+          <p class="card-info"><span class="card-tag result-tag">Результаты</span><time datetime="2026-10-09">9 октября</time></p>
+          <h3>Сборная Narxoz — в финале студенческой лиги</h3>
+          <p>Наша команда по баскетболу одержала победу со счётом 76:68. Гордимся!</p>
+          <footer class="article-footer"><span>◉ 624 просмотра</span><span>♥ 51 &nbsp; 🔥 29</span></footer>
+        </article>
+
+        <article class="news-card" id="honor">
+          <div class="card-top-line gold-line"></div>
+          <p class="card-info"><span class="card-tag honor-tag">Доска почёта</span><time datetime="2026-10-07">7 октября</time></p>
+          <h3>Спортсмен недели: Айдана Серикова</h3>
+          <p>Поздравляем Айдану с золотой медалью на городском первенстве по лёгкой атлетике.</p>
+          <footer class="article-footer"><span>◉ 380 просмотров</span><span>♥ 43</span></footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="community-section container" aria-labelledby="community-title">
+      <div class="community-about">
+        <p class="section-label">СПОРТИВНОЕ СООБЩЕСТВО</p>
+        <h2 id="community-title">Не пропускайте важные события</h2>
+        <p>Следите за расписанием, записывайтесь на секции и поддерживайте сборные Narxoz.</p>
+        <a class="main-link" href="schedule.html">Открыть расписание →</a>
+      </div>
+      <div class="community-points">
+        <p><b>01</b><span><strong>Секции</strong><small>Запись на тренировки онлайн</small></span></p>
+        <p><b>02</b><span><strong>Турниры</strong><small>Анонсы и результаты матчей</small></span></p>
+        <p><b>03</b><span><strong>Достижения</strong><small>Истории спортсменов Narxoz</small></span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">N</span>
+          Narxoz SportHub
+        </a>
+        <p class="footer-desc">Спорт, энергия и достижения университетского сообщества Narxoz.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Навигация в подвале">
+        <h2 class="footer-heading">Навигация</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sections.html">Секции</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Контакты</h2>
+        <address class="footer-contacts">
+          <p>г. Алматы, ул. Жандосова, 55</p>
+          <p><a href="mailto:sport@example.com">sport@example.com</a></p>
+          <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Соцсети</h2>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <time datetime="2026">2026</time> Narxoz SportHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <p class="student-project-note" style="text-align:center;font-size:13px;opacity:.75;margin:16px 0;">Учебный проект студента — не официальный сайт Университета Нархоз. Student coursework, not an official Narxoz University website.</p>
+</body>
+</html>

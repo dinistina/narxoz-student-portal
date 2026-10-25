@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание — Narxoz SportHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/schedule.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        Narxoz SportHub
+      </a>
+
+      <input type="checkbox" id="burger" class="burger-checkbox">
+      <label for="burger" class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="sections.html" class="nav-link">Секции</a></li>
+          <li><a href="schedule.html" class="nav-link active" aria-current="page">Расписание</a></li>
+          <li><a href="news.html" class="nav-link">Новости</a></li>
+        </ul>
+        <div class="nav-extra">
+          <a href="profile.html" class="button">Профиль</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="profile.html" class="button">Профиль</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Расписание -->
+    <section class="schedule-section">
+      <div class="container">
+
+        <header class="page-header">
+          <h1 class="page-title">Расписание тренировок</h1>
+          <p class="page-subtitle">Выберите удобное время для занятий в спортивных комплексах Narxoz.</p>
+        </header>
+
+        <div class="schedule-filters">
+          <span class="filter-label">Быстрый выбор:</span>
+          <ul class="filter-list">
+            <li><a href="#weekdays" class="filter-btn filter-btn--active">Будние дни</a></li>
+            <li><a href="#weekend" class="filter-btn">Выходные</a></li>
+          </ul>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="schedule-table">
+            <caption>Расписание групповых и секционных занятий на текущую неделю</caption>
+            <thead>
+              <tr>
+                <th scope="col">Время</th>
+                <th scope="col">Понедельник</th>
+                <th scope="col">Вторник</th>
+                <th scope="col">Среда</th>
+                <th scope="col">Четверг</th>
+                <th scope="col">Пятница</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><time>08:00</time> – <time>09:30</time></th>
+                <td>
+                  <strong class="sport-name">Плавание</strong>
+                  <span class="sport-place">Grand Pool</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Фитнес</strong>
+                  <span class="sport-place">Зал ГП</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Плавание</strong>
+                  <span class="sport-place">Grand Pool</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Фитнес</strong>
+                  <span class="sport-place">Зал ГП</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Плавание</strong>
+                  <span class="sport-place">Grand Pool</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><time>16:00</time> – <time>17:30</time></th>
+                <td>
+                  <strong class="sport-name">Бокс</strong>
+                  <span class="sport-place">Спорткомплекс</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Борьба</strong>
+                  <span class="sport-place">Зал борьбы</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Бокс</strong>
+                  <span class="sport-place">Спорткомплекс</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Борьба</strong>
+                  <span class="sport-place">Зал борьбы</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Martial arts</strong>
+                  <span class="sport-place">Спорткомплекс</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><time>18:00</time> – <time>19:30</time></th>
+                <td colspan="2">
+                  <strong class="sport-name">Шахматы (Турнир)</strong>
+                  <span class="sport-place">Шахматный клуб</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Пилатес</strong>
+                  <span class="sport-place">Зал ГП</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Тренажёрный зал</strong>
+                  <span class="sport-place">Grand Pool</span>
+                </td>
+                <td>
+                  <strong class="sport-name">Пилатес</strong>
+                  <span class="sport-place">Зал ГП</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Информация и правила -->
+    <section class="info-section">
+      <div class="container">
+        <h2 class="info-title">Информация о площадках и правилах</h2>
+
+        <div class="info-grid">
+
+          <article class="info-card">
+            <h3 class="info-card-title">📍 Спортивный комплекс Narxoz</h3>
+            <p class="info-card-text">Здесь проходят секции по боксу, борьбе и Martial arts. Для посещения необходимо иметь при себе студенческий билет и спортивную форму.</p>
+          </article>
+
+          <article class="info-card">
+            <h3 class="info-card-title">🏊‍♂️ Grand Pool Fitness Centre</h3>
+            <p class="info-card-text">Бассейн и зал групповых программ (фитнес, пилатес). Не забудьте плавательную шапочку и сменную обувь.</p>
+          </article>
+
+          <aside class="info-sidebar">
+            <h3 class="info-sidebar-title">⚠️ Важное примечание</h3>
+            <p>Запись на секции не требуется, вход свободный по расписанию при наличии студенческого пропуска. При отмене тренировок информация публикуется в разделе «<a href="news.html">Новости</a>».</p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">N</span>
+          Narxoz SportHub
+        </a>
+        <p class="footer-desc">Спорт, энергия и достижения университетского сообщества Narxoz.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Навигация в подвале">
+        <h2 class="footer-heading">Навигация</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sections.html">Секции</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Контакты</h2>
+        <address class="footer-contacts">
+          <p>г. Алматы, ул. Жандосова, 55</p>
+          <p><a href="mailto:sport@example.com">sport@example.com</a></p>
+          <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Соцсети</h2>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <time datetime="2026">2026</time> Narxoz SportHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <p class="student-project-note" style="text-align:center;font-size:13px;opacity:.75;margin:16px 0;">Учебный проект студента — не официальный сайт Университета Нархоз. Student coursework, not an official Narxoz University website.</p>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Секции — Narxoz SportHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        Narxoz SportHub
+      </a>
+
+      <input type="checkbox" id="burger" class="burger-checkbox">
+      <label for="burger" class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="sections.html" class="nav-link active" aria-current="page">Секции</a></li>
+          <li><a href="schedule.html" class="nav-link">Расписание</a></li>
+          <li><a href="news.html" class="nav-link">Новости</a></li>
+        </ul>
+        <div class="nav-extra">
+          <a href="profile.html" class="button">Профиль</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="profile.html" class="button">Профиль</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Заголовок страницы -->
+    <section class="page-head">
+      <div class="container">
+        <h1>Спортивные секции</h1>
+        <p class="page-head__text">Выберите секцию и запишитесь на тренировки в спорткомплексах Narxoz.</p>
+        <div class="chips">
+          <span class="chips__label">Показать:</span>
+          <a class="chip chip--active" href="#all">Все</a>
+          <a class="chip" href="#my">Мои</a>
+          <a class="chip" href="#all">Командные</a>
+          <a class="chip" href="#all">Единоборства</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Мои секции -->
+    <section class="catalog" id="my">
+      <div class="container">
+        <h2>Мои секции</h2>
+        <div class="my-layout">
+
+          <article class="card card--big" id="football">
+            <div class="card__media">
+              <img src="img/football.jpg" alt="Футболист ведёт мяч на стадионе" width="1024" height="576" loading="lazy">
+              <span class="badge badge--live">Live</span>
+            </div>
+            <div class="card__body">
+              <h3>Футбол</h3>
+              <p>Техника, тактика и командная игра.</p>
+              <p class="card__meta">Пн, Ср · 18:00 · Стадион Narxoz</p>
+              <span class="status status--ok">Зарегистрирован</span>
+            </div>
+          </article>
+
+          <div class="my-side">
+
+            <article class="card card--row" id="basketball">
+              <div class="card__media">
+                <img src="img/basketball.jpg" alt="Баскетболист готовится к броску" width="1024" height="576" loading="lazy">
+                <span class="badge badge--new">Новое</span>
+              </div>
+              <div class="card__body">
+                <h3>Баскетбол</h3>
+                <p>Дриблинг, броски и игровая практика.</p>
+                <p class="card__meta">Вт, Чт · 17:00 · Спортзал</p>
+                <span class="status status--ok">Зарегистрирован</span>
+              </div>
+            </article>
+
+            <article class="card card--row" id="swimming">
+              <div class="card__media">
+                <img src="img/swimming.jpg" alt="Пловец в бассейне" width="1024" height="576" loading="lazy">
+              </div>
+              <div class="card__body">
+                <h3>Плавание</h3>
+                <p>Выносливость, техника и скорость.</p>
+                <p class="card__meta">Пн, Ср, Пт · 08:00 · Grand Pool</p>
+                <span class="status status--ok">Зарегистрирован</span>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Все секции -->
+    <section class="catalog catalog--alt" id="all">
+      <div class="container">
+        <h2>Все секции</h2>
+        <div class="cards">
+
+          <article class="card" id="boxing">
+            <div class="card__media">
+              <img src="img/boxing.jpg" alt="Боксёрские перчатки на ринге" width="1024" height="576" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Бокс</h3>
+              <p>Работа на лапах, спарринги, общая физическая подготовка.</p>
+              <p class="card__meta">Пн, Ср, Пт · 16:00 · Спорткомплекс</p>
+              <a class="button" href="#">Записаться</a>
+            </div>
+          </article>
+
+          <article class="card" id="wrestling">
+            <div class="card__media">
+              <img src="img/wrestling.jpg" alt="Борцы на ковре" width="1024" height="576" loading="lazy">
+              <span class="badge badge--new">Новое</span>
+            </div>
+            <div class="card__body">
+              <h3>Борьба</h3>
+              <p>Базовая техника, захваты и работа в партере.</p>
+              <p class="card__meta">Вт, Чт · 16:00 · Зал борьбы</p>
+              <a class="button" href="#">Записаться</a>
+            </div>
+          </article>
+
+          <article class="card" id="fitness">
+            <div class="card__media">
+              <img src="img/fitness.jpg" alt="Студенты на групповой тренировке" width="1024" height="576" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Фитнес</h3>
+              <p>Групповые тренировки для силы и тонуса.</p>
+              <p class="card__meta">Вт, Чт · 08:00 · Зал ГП</p>
+              <a class="button" href="#">Записаться</a>
+            </div>
+          </article>
+
+          <article class="card" id="pilates">
+            <div class="card__media">
+              <img src="img/pilates.jpg" alt="Коврики и инвентарь для пилатеса в светлом зале" width="1024" height="576" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Пилатес</h3>
+              <p>Гибкость, осанка и контроль над телом.</p>
+              <p class="card__meta">Ср, Пт · 18:00 · Зал ГП</p>
+              <a class="button" href="#">Записаться</a>
+            </div>
+          </article>
+
+          <article class="card" id="chess">
+            <div class="card__media">
+              <img src="img/chess.jpg" alt="Шахматная доска с фигурами" width="1024" height="576" loading="lazy">
+              <span class="badge badge--live">Live</span>
+            </div>
+            <div class="card__body">
+              <h3>Шахматы</h3>
+              <p>Разборы партий и внутренние турниры клуба.</p>
+              <p class="card__meta">Пн · 18:00 · Шахматный клуб</p>
+              <a class="button" href="#">Записаться</a>
+            </div>
+          </article>
+
+          <article class="card" id="volleyball">
+            <div class="card__media">
+              <img src="img/volleyball.jpg" alt="Волейбольный матч в зале" width="1024" height="576" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Волейбол</h3>
+              <p>Командная игра, подготовка к турниру факультетов.</p>
+              <p class="card__meta">Сб · 10:00 · Спорткомплекс</p>
+              <a class="button" href="#">Записаться</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">N</span>
+          Narxoz SportHub
+        </a>
+        <p class="footer-desc">Спорт, энергия и достижения университетского сообщества Narxoz.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Навигация в подвале">
+        <h2 class="footer-heading">Навигация</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sections.html">Секции</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Контакты</h2>
+        <address class="footer-contacts">
+          <p>г. Алматы, ул. Жандосова, 55</p>
+          <p><a href="mailto:sport@example.com">sport@example.com</a></p>
+          <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Соцсети</h2>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <time datetime="2026">2026</time> Narxoz SportHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <p class="student-project-note" style="text-align:center;font-size:13px;opacity:.75;margin:16px 0;">Учебный проект студента — не официальный сайт Университета Нархоз. Student coursework, not an official Narxoz University website.</p>
+</body>
+</html>

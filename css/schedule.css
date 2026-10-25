@@ -1,0 +1,194 @@
+/* Расписание */
+.schedule-section {
+  padding: 32px 0 48px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.schedule-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+.filter-list {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: #E5E7EB;
+  color: var(--text-body);
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.filter-btn--active,
+.filter-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--text-on-dark);
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--bg-card);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  text-align: left;
+}
+
+.schedule-table caption {
+  padding: 12px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+}
+
+.schedule-table thead th {
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.schedule-table tbody th {
+  background-color: #F3F4F6;
+  color: var(--text-heading);
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.sport-name {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+
+.sport-place {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Информация и правила */
+.info-section {
+  padding: 40px 0 64px;
+  background-color: #F3F4F6;
+  border-top: 1px solid var(--border-color);
+}
+
+.info-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 24px;
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.info-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-heading);
+}
+
+.info-card-text {
+  font-size: 0.9375rem;
+  color: var(--text-body);
+}
+
+.info-sidebar {
+  background-color: var(--color-primary-light);
+  border-left: 4px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.info-sidebar-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary-hover);
+  margin-bottom: 6px;
+}
+
+/* Медиазапросы */
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 2.25rem;
+  }
+
+  .schedule-filters {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .info-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .info-sidebar {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-card,
+  .info-sidebar {
+    width: calc((100% - 2 * 16px) / 3);
+  }
+}

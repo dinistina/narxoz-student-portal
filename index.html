@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narxoz SportHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        Narxoz SportHub
+      </a>
+
+      <input type="checkbox" id="burger" class="burger-checkbox">
+      <label for="burger" class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Главная</a></li>
+          <li><a href="sections.html" class="nav-link">Секции</a></li>
+          <li><a href="schedule.html" class="nav-link">Расписание</a></li>
+          <li><a href="news.html" class="nav-link">Новости</a></li>
+        </ul>
+        <div class="nav-extra">
+          <a href="profile.html" class="button">Профиль</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="profile.html" class="button">Профиль</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Герой -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero-label">Спортивный портал университета Narxoz</p>
+        <h1 class="hero-title">Спорт, энергия и&nbsp;победы — в&nbsp;одном месте</h1>
+        <p class="hero-text">Записывайтесь на секции, следите за расписанием и поддерживайте сборные Narxoz.</p>
+
+        <ul class="stats">
+          <li class="stat">
+            <strong class="stat-number">9</strong>
+            <span class="stat-label">спортивных секций</span>
+          </li>
+          <li class="stat stat--active">
+            <strong class="stat-number">3</strong>
+            <span class="stat-label">вы уже записаны</span>
+          </li>
+          <li class="stat">
+            <strong class="stat-number">15</strong>
+            <span class="stat-label">тренировок в неделю</span>
+          </li>
+          <li class="stat">
+            <strong class="stat-number">500+</strong>
+            <span class="stat-label">студентов в сообществе</span>
+          </li>
+        </ul>
+
+        <div class="hero-actions">
+          <a href="sections.html" class="button">Выбрать секцию</a>
+          <a href="schedule.html" class="hero-link">Смотреть расписание →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секции -->
+    <section class="sports">
+      <div class="container">
+
+        <div class="sports-head">
+          <h2 class="sports-title">Секции</h2>
+          <a href="sections.html" class="sports-all">Все</a>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <a href="sections.html#swimming" class="card-link">
+              <div class="card-banner"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Плавание</h3>
+                  <p class="card-desc">Техника, выносливость и скорость на воде.</p>
+                  <p class="card-place">Плавательный бассейн (Grand Pool fitness centre)</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#boxing" class="card-link">
+              <div class="card-banner card-banner--dark"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Бокс</h3>
+                  <p class="card-desc">Стойка, удары и работа в паре.</p>
+                  <p class="card-place">Зал бокса (Спортивный комплекс)</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#chess" class="card-link">
+              <div class="card-banner card-banner--grey"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Шахматы</h3>
+                  <p class="card-desc">Дебюты, тактика и разбор партий.</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#pilates" class="card-link">
+              <div class="card-banner"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Пилатес</h3>
+                  <p class="card-desc">Мышцы кора, осанка и гибкость.</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#fitness" class="card-link">
+              <div class="card-banner card-banner--dark"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Фитнес</h3>
+                  <p class="card-desc">Групповые тренировки под музыку.</p>
+                  <p class="card-place">Зал групповых программ (Grand Pool fitness centre)</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#gym" class="card-link">
+              <div class="card-banner card-banner--grey"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Тренажёрный зал</h3>
+                  <p class="card-desc">Силовые тренировки с тренером и самостоятельно.</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#wrestling" class="card-link">
+              <div class="card-banner"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Борьба</h3>
+                  <p class="card-desc">Броски, захваты и работа в партере.</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="sections.html#martial-arts" class="card-link">
+              <div class="card-banner card-banner--dark"></div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h3 class="card-title">Martial arts</h3>
+                  <p class="card-desc">Техники разных боевых искусств: сила, скорость и координация.</p>
+                  <p class="card-place">Зал бокса (Спортивный комплекс)</p>
+                </div>
+                <span class="card-arrow">›</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">N</span>
+          Narxoz SportHub
+        </a>
+        <p class="footer-desc">Спорт, энергия и достижения университетского сообщества Narxoz.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Навигация в подвале">
+        <h2 class="footer-heading">Навигация</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sections.html">Секции</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Контакты</h2>
+        <address class="footer-contacts">
+          <p>г. Алматы, ул. Жандосова, 55</p>
+          <p><a href="mailto:sport@example.com">sport@example.com</a></p>
+          <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Соцсети</h2>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <time datetime="2026">2026</time> Narxoz SportHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <p class="student-project-note" style="text-align:center;font-size:13px;opacity:.75;margin:16px 0;">Учебный проект студента — не официальный сайт Университета Нархоз. Student coursework, not an official Narxoz University website.</p>
+</body>
+</html>

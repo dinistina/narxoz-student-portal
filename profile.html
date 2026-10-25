@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль — Narxoz SportHub</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-mark">N</span>
+        Narxoz SportHub
+      </a>
+
+      <input type="checkbox" id="burger" class="burger-checkbox">
+      <label for="burger" class="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="sections.html" class="nav-link">Секции</a></li>
+          <li><a href="schedule.html" class="nav-link">Расписание</a></li>
+          <li><a href="news.html" class="nav-link">Новости</a></li>
+        </ul>
+        <div class="nav-extra">
+          <a href="profile.html" class="button active" aria-current="page">Профиль</a>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a href="profile.html" class="button active" aria-current="page">Профиль</a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Карточка студента -->
+    <section class="profile-hero">
+      <div class="container">
+        <article class="profile-card">
+
+          <div class="avatar">
+            <span class="avatar-photo">СД</span>
+            <span class="avatar-badge" aria-hidden="true">📷</span>
+          </div>
+
+          <h1 class="profile-name">Студентов Демо Демович</h1>
+          <p class="profile-course">2 курс · Информационные системы</p>
+          <p class="profile-email"><a href="mailto:demo.student@example.com">demo.student@example.com</a></p>
+
+          <ul class="profile-stats">
+            <li class="profile-stat">
+              <strong class="profile-stat-number">3</strong>
+              <span class="profile-stat-label">активные записи</span>
+            </li>
+            <li class="profile-stat">
+              <strong class="profile-stat-number">24</strong>
+              <span class="profile-stat-label">посещения</span>
+            </li>
+            <li class="profile-stat">
+              <strong class="profile-stat-number">1</strong>
+              <span class="profile-stat-label">в листе ожидания</span>
+            </li>
+          </ul>
+
+          <input type="file" id="photo" class="photo-input" accept="image/*">
+          <label for="photo" class="button button--outline">Сменить фото</label>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- Информация и записи -->
+    <section class="profile-details">
+      <div class="container details-inner">
+
+        <article class="panel">
+          <h2 class="panel-title">Информация о студенте</h2>
+          <dl class="info-list">
+            <div class="info-row">
+              <dt>Студенческий ID</dt>
+              <dd>000000</dd>
+            </div>
+            <div class="info-row">
+              <dt>Факультет</dt>
+              <dd>Школа цифровых технологий</dd>
+            </div>
+            <div class="info-row">
+              <dt>Специальность</dt>
+              <dd>Информационные системы</dd>
+            </div>
+            <div class="info-row">
+              <dt>Курс и группа</dt>
+              <dd>2 курс, ДЕМО-1</dd>
+            </div>
+            <div class="info-row">
+              <dt>Телефон</dt>
+              <dd><a href="tel:+77011234567">+7 (701) 123-45-67</a></dd>
+            </div>
+            <div class="info-row">
+              <dt>Пропуск в спорткомплекс</dt>
+              <dd class="info-ok">Активен</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <h2 class="panel-title">Мои записи</h2>
+            <span class="panel-count">3</span>
+          </div>
+
+          <ul class="booking-list">
+            <li class="booking">
+              <p class="booking-time"><strong>18:00</strong> Пн, Ср</p>
+              <div class="booking-text">
+                <h3 class="booking-title">Футбол</h3>
+                <p class="booking-place">Стадион Narxoz</p>
+              </div>
+              <span class="booking-status">Зарегистрирован</span>
+            </li>
+            <li class="booking">
+              <p class="booking-time"><strong>17:00</strong> Вт, Чт</p>
+              <div class="booking-text">
+                <h3 class="booking-title">Баскетбол</h3>
+                <p class="booking-place">Спортзал</p>
+              </div>
+              <span class="booking-status">Зарегистрирован</span>
+            </li>
+            <li class="booking">
+              <p class="booking-time"><strong>08:00</strong> Пн, Ср, Пт</p>
+              <div class="booking-text">
+                <h3 class="booking-title">Плавание</h3>
+                <p class="booking-place">Grand Pool</p>
+              </div>
+              <span class="booking-status">Зарегистрирован</span>
+            </li>
+          </ul>
+
+          <a href="sections.html" class="panel-link">Записаться ещё на секцию →</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">N</span>
+          Narxoz SportHub
+        </a>
+        <p class="footer-desc">Спорт, энергия и достижения университетского сообщества Narxoz.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Навигация в подвале">
+        <h2 class="footer-heading">Навигация</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="sections.html">Секции</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Контакты</h2>
+        <address class="footer-contacts">
+          <p>г. Алматы, ул. Жандосова, 55</p>
+          <p><a href="mailto:sport@example.com">sport@example.com</a></p>
+          <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="footer-heading">Соцсети</h2>
+        <ul class="footer-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <time datetime="2026">2026</time> Narxoz SportHub. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <p class="student-project-note" style="text-align:center;font-size:13px;opacity:.75;margin:16px 0;">Учебный проект студента — не официальный сайт Университета Нархоз. Student coursework, not an official Narxoz University website.</p>
+</body>
+</html>
